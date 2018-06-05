@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MiniCapstoneClient</title> 
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+     <% flash.each do |name, message| %>
+      <p><%= message %></p>
+      <% end %>
+
+     <a href="/client/products/new"> Enter a new product here</a> 
+    <%= yield %>
+
+    <h6> Thank you for your attention </h6>
+  </body>
+</html>

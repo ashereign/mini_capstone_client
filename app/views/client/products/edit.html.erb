@@ -1,0 +1,21 @@
+<h2> Edit Product </h2>
+
+<%= form_tag "/client/products/#{@product['id']}", method: :patch do %>
+  <div>
+    Title: <input type="text" name="name" value="<%= @product['name'] %>" />
+  </div>
+  <div>
+    Price: <input type="text" name="price" value="<%= @product['price'] %>" />
+  </div>
+  <div>
+    URL: <input type="text" name="image_url" 
+    value="<%= @product['image_url'] %>"/>
+  </div>
+<div>
+  Description: <input type="text" name="description"
+  value="<%= @product['description'] %>"/>
+</div>
+<div>
+<input type="submit" name="" value="Update Product"/>
+</div>
+  <% end %>

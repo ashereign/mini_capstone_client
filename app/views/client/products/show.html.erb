@@ -1,0 +1,11 @@
+<h1><%=@product['name']%></h1> 
+<h2><%=@product['price']%></h2> 
+ 
+<img src="<%= @product['image_url'] %>"><br>
+<h4><%=@product['description']%></h4> 
+
+
+<a href="/client/products/<%= @product['id'] %>/edit">Edit</a><br> 
+<a href="/client/products/<%= @product['id'] %>" data-method="delete">Delete Product</a><br> 
+
+<a href="/client/products"> Product Index </a>
