@@ -13,9 +13,11 @@
      <% flash.each do |name, message| %>
       <p><%= message %></p>
       <% end %>
+<a href="/signup">Sign Up</a> <br>
+     <a href="/client/products/new"> Enter a new product here</a> <br>
 
-     <a href="/client/products/new"> Enter a new product here</a> 
-    <%= yield %>
+    <%= yield %> 
+    
 
     <h6> Thank you for your attention </h6>
   </body>
