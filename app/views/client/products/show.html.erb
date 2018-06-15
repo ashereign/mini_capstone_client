@@ -30,3 +30,21 @@
 <a href="/client/products/<%= @product['id'] %>" data-method="delete">Delete Product</a><br> 
 
 <a href="/client/products"> Product Index </a>
+
+
+
+<h2> Enter a new Order </h2>
+
+
+  <%= form_tag "/client/orders", method: :post do %>
+  <div>
+    Product Id: <input type="number" name="product_id"/>
+  </div>
+  <div>
+    Quantity: <input type="number" name="quantity"/>
+  </div>
+ 
+<div>
+<input type="submit" name="" value="Create Order"/>
+</div>
+  <% end %>
